@@ -1,278 +1,40 @@
-
-/* Basic CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+body {
+    background-color: aqua;
 }
 
-html {
-    scroll-behavior: smooth;
+.container {
+    background-color: white;
+    width: 450px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-/* Header */
-header {
-    background-color: #222;
-    color: white;
-    padding: 20px 7%;
+h1 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    padding: 8px;
+}
+
+button {
+    padding: 8px;
+}
+
+li {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
 }
 
-header h2 {
-    color: orange;
-    font-size: 28px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 16px;
-}
-
-nav a:hover {
-    color: orange;
-}
-
-/* Hero Section */
-.hero {
-    height: 450px;
-    background-image:
-    linear-gradient(rgba(0,0,0,0.6),
-    rgba(0,0,0,0.6)),
-    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400");
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-.hero-content h1 {
-    font-size: 45px;
-    margin-bottom: 15px;
-}
-
-.hero-content p {
-    font-size: 18px;
-    margin-bottom: 25px;
-}
-
-.btn {
-    background-color: orange;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: darkorange;
-}
-
-/* About Section */
-.about {
-    padding: 60px 10%;
-    text-align: center;
-    background-color: #fff8f0;
-}
-
-.about h2,
-.menu h2,
-.special h2,
-.reviews h2,
-.contact h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
-    color: #333;
-}
-
-.about p {
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-/* Menu Section */
-.menu {
-    padding: 60px 7%;
-    text-align: center;
-}
-
-.menu-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.food-card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px #ccc;
-    transition: 0.3s;
-}
-
-.food-card:hover {
-    transform: translateY(-8px);
-}
-
-.food-card img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.food-card h3 {
-    margin: 12px 0;
-}
-
-.food-card p {
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.food-card h4 {
-    color: #e67e00;
-    font-size: 20px;
-}
-
-/* Special Offers */
-.special {
-    background-color: #ffedd5;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.special h3 {
-    color: #e67e00;
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-
-.special p {
-    font-size: 18px;
-    margin: 10px;
-}
-
-/* Reviews */
-.reviews {
-    padding: 60px 7%;
-    text-align: center;
-}
-
-.review-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.review-card {
-    background-color: #fff8f0;
-    padding: 25px;
-    width: 280px;
-    border-radius: 10px;
-}
-
-.review-card p {
-    margin: 15px 0;
-}
-
-.review-card h4 {
-    color: orange;
-}
-
-/* Contact Section */
-.contact {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.contact h2 {
-    color: orange;
-}
-
-.contact h3 {
-    margin: 20px 0;
-}
-
-.contact p {
-    margin: 12px 0;
-}
-
-/* Footer */
-footer {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 18px;
-}
-
-/* Responsive Design */
-
-@media (max-width: 900px) {
-
-    .menu-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    header h2 {
-        font-size: 24px;
-    }
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    nav a {
-        margin: 0;
-        font-size: 14px;
-    }
-
-    .hero {
-        height: 350px;
-        padding: 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 30px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    .menu-container {
-        grid-template-columns: 1fr;
-    }
-
-    .about p {
-        font-size: 16px;
-    }
-
+.completed {
+    text-decoration: line-through;
+    color: grey;
 }

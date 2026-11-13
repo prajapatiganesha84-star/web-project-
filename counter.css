@@ -1,0 +1,50 @@
+* Simple styling for the counter layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+#value {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #222;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid #222;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #222;
+    color: #fff;
+}
